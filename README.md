@@ -1,0 +1,1 @@
+# vanilla-project-setup
