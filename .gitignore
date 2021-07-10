@@ -6,3 +6,8 @@
 # Dependency directories #
 ##########################
 node_modules/
+
+# Production #
+##########################
+dist/
+
