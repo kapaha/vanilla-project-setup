@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "sources": [
+        "webpack://practise/./src/styles/styles.css"
+    ],
+    "names": [],
+    "mappings": "AAAA,iBAKI,qBAAsB,CAFtB,QAAS,CACT,SAEJ,CAEA,OACI,SACJ,CAEA,MACI,sDAEA,uBAA2B,CAD3B,qBAAsB,CAEtB,gBAAiB,CACjB,UACJ,CAEA,IAEI,uBAAwB,CADxB,WAEJ",
+    "file": "main.3d0f32b786ac613a50d2.css",
+    "sourcesContent": [
+        "*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}\n\n.title {\n    color: red;\n}\n\n.hero {\n    background-image: url('../images/icon.png');\n    background-size: cover;\n    background-position: center;\n    min-height: 300px;\n    width: 100%;\n}\n\nimg {\n    width: 100px;\n    background-color: orange;\n}\n"
+    ],
+    "sourceRoot": ""
+}

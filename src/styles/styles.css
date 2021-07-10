@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    color: red;
+}
+
+.hero {
+    background-image: url('../images/icon.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    background-color: orange;
+}
