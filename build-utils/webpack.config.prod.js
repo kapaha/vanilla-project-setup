@@ -1,15 +1,14 @@
-const { merge } = require('webpack-merge');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const common = require('./webpack.config.common');
 
-module.exports = merge(common, {
+module.exports = {
     mode: 'production',
 
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
+            filename: '[name].[contenthash].bundle.css',
         }),
     ],
 
@@ -17,7 +16,7 @@ module.exports = merge(common, {
         minimizer: [
             `...`,
             new HtmlWebpackPlugin({
-                template: './src/index.html',
+                template: path.resolve(__dirname, '..', './src/index.html'),
                 minify: {
                     removeAttributeQuotes: true,
                     collapseWhitespace: true,
@@ -34,4 +33,4 @@ module.exports = merge(common, {
         filename: '[name].[contenthash].bundle.js',
         assetModuleFilename: 'images/[hash][ext][query]',
     },
-});
+};

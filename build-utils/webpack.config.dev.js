@@ -1,14 +1,13 @@
-const { merge } = require('webpack-merge');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const common = require('./webpack.config.common');
 
-module.exports = merge(common, {
+module.exports = {
     mode: 'development',
 
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: path.resolve(__dirname, '..', './src/index.html'),
         }),
         new MiniCssExtractPlugin(),
     ],
@@ -16,12 +15,11 @@ module.exports = merge(common, {
     devtool: 'inline-source-map',
 
     devServer: {
-        contentBase: './public',
-        hot: true,
+        contentBase: path.resolve(__dirname, '..', './dist'),
     },
 
     output: {
         filename: '[name].bundle.js',
         assetModuleFilename: 'images/[name][ext][query]',
     },
-});
+};

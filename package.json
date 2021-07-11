@@ -4,9 +4,10 @@
     "description": "",
     "private": true,
     "scripts": {
-        "start": "webpack serve --open --config webpack.config.dev.js",
-        "build": "webpack --config webpack.config.prod.js",
-        "watch": "webpack --watch --config webpack.config.dev.js"
+        "start": "webpack serve --open --config build-utils/webpack.config.js --env env=dev",
+        "start-hot": "webpack serve --open --hot --config build-utils/webpack.config.js --env env=dev",
+        "build": "webpack --config build-utils/webpack.config.js --env env=prod",
+        "build-dev": "webpack --config build-utils/webpack.config.js --env env=dev"
     },
     "keywords": [],
     "author": "",

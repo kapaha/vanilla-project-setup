@@ -28,3 +28,6 @@
 		- [x] js
 	- [x] file names when compiled
 	- [x] test everything / cleanup
+	- [x] build utils folder
+	- [x] dynamic web config
+	- [ ] server without hot reload
