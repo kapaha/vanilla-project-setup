@@ -30,4 +30,4 @@
 	- [x] test everything / cleanup
 	- [x] build utils folder
 	- [x] dynamic web config
-	- [ ] server without hot reload
+	- [x] server without hot reload
